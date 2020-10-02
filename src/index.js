@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
+function changeToPink(event){
+  event.target.style.color = "pink"
+}
+
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={changeToPink} />
   </div>,
   document.getElementById('root')
 );
