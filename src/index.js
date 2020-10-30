@@ -6,8 +6,8 @@ import SimplerComponent from './components/SimplerComponent';
 
 ReactDOM.render(
   <div>
-    <SimpleComponent />
+   <SimpleComponent />
     <SimplerComponent handleClick={alert("Good job!!")}  />
   </div>,
   document.getElementById('root')
-);
+); 
